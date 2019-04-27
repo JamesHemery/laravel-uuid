@@ -1,8 +1,9 @@
 # laravel-uuid
 Eloquent UUID Trait for Laravel 5.7 and 5.8.
 
-[![MIT licensed](https://img.shields.io/badge/license-MIT-green.svg)](https://raw.githubusercontent.com/JamesHemery/laravel-uuid/master/LICENSE)
-[![Travis](https://img.shields.io/travis/JamesHemery/laravel-uuid.svg)](https://travis-ci.org/JamesHemery/laravel-uuid)
+[![Travis](https://img.shields.io/travis/JamesHemery/laravel-uuid.svg?style=for-the-badge)](https://travis-ci.org/JamesHemery/laravel-uuid)
+[![Total Downloads](https://img.shields.io/packagist/dt/jamesh/laravel-uuid.svg?style=for-the-badge)](https://packagist.org/packages/jamesh/laravel-uuid)
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](https://raw.githubusercontent.com/JamesHemery/laravel-uuid/master/LICENSE)
 
 The HasUuid Trait will add behavior to creating and saving Eloquent events for generate an Uuid.
 
