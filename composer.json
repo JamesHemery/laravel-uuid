@@ -1,0 +1,35 @@
+{
+    "name": "jamesh/laravel-uuid",
+    "description": "Eloquent UUID Trait for Laravel 5.7 and 5.8.",
+    "type": "plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "James Hemery",
+            "email": "hello@james-hemery.pro"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php" : "^7.2",
+        "illuminate/support": "~5.7.0|~5.8.0",
+        "illuminate/database": "~5.7.0|~5.8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0|^8.0",
+        "orchestra/testbench": "~3.7.0|~3.8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jamesh\\Uuid\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jamesh\\Uuid\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
+}
