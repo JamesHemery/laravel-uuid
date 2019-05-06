@@ -9,7 +9,7 @@ The HasUuid Trait will add behavior to creating and saving Eloquent events for g
 
 ## Installation
 
-	composer require jamesh/eloquent-uuid
+	composer require jamesh/laravel-uuid
 
 ## Usage
 
