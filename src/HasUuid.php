@@ -12,6 +12,8 @@ use Illuminate\Support\Str;
 trait HasUuid
 {
 
+    protected $isLockedUuid = true;
+
     /**
      * Used by Eloquent to get primary key type.
      * UUID Identified as a string.
@@ -39,7 +41,7 @@ trait HasUuid
     public static function bootHasUuid()
     {
         // Create a UUID to the model if it does not have one
-        static::creating(function ($model) {
+        static::creating(function (Model $model) {
             $model->keyType = 'string';
             $model->incrementing = false;
 
@@ -51,8 +53,10 @@ trait HasUuid
         // Set original if someone try to change UUID on update/save existing model
         static::saving(function (Model $model) {
             $original_id = $model->getOriginal('id');
-            if ($original_id !== $model->id) {
-                $model->id = $original_id;
+            if (!is_null($original_id) && $model->isLockedUuid) {
+                if ($original_id !== $model->id) {
+                    $model->id = $original_id;
+                }
             }
         });
     }
