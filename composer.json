@@ -1,6 +1,6 @@
 {
     "name": "jamesh/laravel-uuid",
-    "description": "Eloquent UUID Trait for Laravel 5.7, 5.8 and 6.0.",
+    "description": "Eloquent UUID Trait for Laravel 5.7 and above.",
     "type": "plugin",
     "license": "MIT",
     "authors": [
@@ -12,8 +12,8 @@
     "minimum-stability": "stable",
     "require": {
         "php" : "^7.2",
-        "illuminate/support": "^5.7|^5.8|^6.0|^7",
-        "illuminate/database": "^5.7|^5.8|^6.0|^7"
+        "illuminate/support": "^5.7|^6|^7|^8",
+        "illuminate/database": "^5.7|^6|^7|^8"
     },
     "require-dev": {
         "phpunit/phpunit": "^7.0|^8.0",
