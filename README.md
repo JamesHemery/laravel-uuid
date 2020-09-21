@@ -1,5 +1,5 @@
 # laravel-uuid
-Eloquent UUID Trait for Laravel 5.7, 5.8, 6.0 and 7.0.
+Eloquent UUID Trait for Laravel 5.7 and above.
 
 [![Travis](https://img.shields.io/travis/JamesHemery/laravel-uuid.svg?style=for-the-badge)](https://travis-ci.org/JamesHemery/laravel-uuid)
 [![Total Downloads](https://img.shields.io/packagist/dt/jamesh/laravel-uuid.svg?style=for-the-badge)](https://packagist.org/packages/jamesh/laravel-uuid)
