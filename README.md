@@ -1,7 +1,7 @@
 # laravel-uuid
 Eloquent UUID Trait for Laravel 5.7 and above.
 
-[![Travis](https://img.shields.io/travis/JamesHemery/laravel-uuid.svg?style=for-the-badge)](https://travis-ci.org/JamesHemery/laravel-uuid)
+[![Github Actions](https://img.shields.io/github/workflow/status/JamesHemery/laravel-uuid/Continuous%20Integration.svg?style=for-the-badge)](https://github.com/JamesHemery/laravel-uuid/actions?query=workflow%3A%22Continuous+Integration%22)
 [![Total Downloads](https://img.shields.io/packagist/dt/jamesh/laravel-uuid.svg?style=for-the-badge)](https://packagist.org/packages/jamesh/laravel-uuid)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](https://raw.githubusercontent.com/JamesHemery/laravel-uuid/master/LICENSE)
 
