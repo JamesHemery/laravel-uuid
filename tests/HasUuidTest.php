@@ -15,10 +15,10 @@ class HasUuidTest extends TestCase
     public function test_create()
     {
         $post = Post::create(['title' => 'My awesome post']);
-        $this->assertRegExp(self::UUID_REGEX, $post->id);
+        $this->assertMatchesRegularExpression(self::UUID_REGEX, $post->id);
 
         $found = Post::first();
-        $this->assertRegExp(self::UUID_REGEX, $found->id);
+        $this->assertMatchesRegularExpression(self::UUID_REGEX, $found->id);
     }
 
     public function test_find()
@@ -117,7 +117,7 @@ class HasUuidTest extends TestCase
 
         $this->assertNotEmpty($found->id);
         $this->assertNotNull($found->id);
-        $this->assertRegExp(self::UUID_REGEX, $found->id);
+        $this->assertMatchesRegularExpression(self::UUID_REGEX, $found->id);
     }
 
     public function test_create_with_empty_id()
@@ -132,7 +132,7 @@ class HasUuidTest extends TestCase
 
             $this->assertNotEmpty($found->id);
             $this->assertNotNull($found->id);
-            $this->assertRegExp(self::UUID_REGEX, $found->id);
+            $this->assertMatchesRegularExpression(self::UUID_REGEX, $found->id);
         });
     }
 }
