@@ -8,8 +8,8 @@ jobs:
       fail-fast: false
       matrix:
         operating-system: [ubuntu-latest]
-        php-versions: ['7.2', '7.3', '7.4', '8.0']
-   
+        php-versions: ['7.4', '8.0']
+
     steps:
       - uses: actions/checkout@v2
 
@@ -22,7 +22,7 @@ jobs:
         id: composer-cache
         run: |
           echo "::set-output name=dir::$(composer config cache-files-dir)"
-          
+
       - uses: actions/cache@v2
         with:
           path: ${{ steps.composer-cache.outputs.dir }}
