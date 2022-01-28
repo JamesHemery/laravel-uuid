@@ -46,18 +46,22 @@ trait HasUuid
             $model->incrementing = false;
 
             if (!$model->getKey()) {
-                $model->{$model->getKeyName()} = (string)Str::uuid();
+                $model->{$model->getCustomKeyname()} = (string)Str::uuid();
             }
         });
 
         // Set original if someone try to change UUID on update/save existing model
         static::saving(function (Model $model) {
-            $original_id = $model->getOriginal('id');
+            $original_id = $model->getOriginal($model->getCustomKeyname());
             if (!is_null($original_id) && $model->isLockedUuid) {
                 if ($original_id !== $model->id) {
                     $model->id = $original_id;
                 }
             }
         });
+    }
+
+    public function getCustomKeyname() {
+        return isset($this->customKeyname) ? $this->customKeyname : $this->getKeyName();
     }
 }
