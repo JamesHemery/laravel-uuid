@@ -1,12 +1,11 @@
 {
-    "name": "jamesh/laravel-uuid",
+    "name": "darkmodeee/laravel-uuid",
     "description": "Eloquent UUID Trait for Laravel 6 and above.",
     "type": "plugin",
     "license": "MIT",
     "authors": [
         {
-            "name": "James Hemery",
-            "email": "hello@james-hemery.pro"
+            "name": "Zoren Konte"
         }
     ],
     "minimum-stability": "stable",
