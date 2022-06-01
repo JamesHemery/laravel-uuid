@@ -1,5 +1,5 @@
 {
-    "name": "yieldstudio/laravel-uuid",
+    "name": "jamesh/laravel-uuid",
     "description": "Eloquent UUID Trait for Laravel 6 and above.",
     "type": "plugin",
     "license": "MIT",
