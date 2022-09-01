@@ -52,10 +52,11 @@ trait HasUuid
 
         // Set original if someone try to change UUID on update/save existing model
         static::saving(function (Model $model) {
-            $original_id = $model->getOriginal($model->getCustomKeyname());
+            $key = $model->getCustomKeyname();
+            $original_id = $model->getOriginal($key);
             if (!is_null($original_id) && $model->isLockedUuid) {
-                if ($original_id !== $model->id) {
-                    $model->id = $original_id;
+                if ($original_id !== $key) {
+                    $model->{$model->getCustomKeyname()} = $original_id;
                 }
             }
         });
