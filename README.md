@@ -1,6 +1,8 @@
 # laravel-uuid
 Eloquent UUID Trait for Laravel 5.7 and above.
 
+⚠️ This package will no longer be maintained. [The HasUuids feature has been added in Laravel 9.](https://laravel.com/docs/9.x/eloquent#uuid-and-ulid-keys)
+
 [![Github Actions](https://img.shields.io/github/workflow/status/JamesHemery/laravel-uuid/Continuous%20Integration.svg?style=for-the-badge)](https://github.com/JamesHemery/laravel-uuid/actions?query=workflow%3A%22Continuous+Integration%22)
 [![Total Downloads](https://img.shields.io/packagist/dt/jamesh/laravel-uuid.svg?style=for-the-badge)](https://packagist.org/packages/jamesh/laravel-uuid)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](https://raw.githubusercontent.com/JamesHemery/laravel-uuid/master/LICENSE)
